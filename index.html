@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python: Электронды оқулық — 7-сынып</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .stats-row { display: flex; gap: 16px; justify-content: center; margin: 40px 0 20px; flex-wrap: wrap; }
+        .stat-item { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 20px 32px; text-align: center; }
+        .stat-num { font-family: 'Unbounded', sans-serif; font-size: 2rem; font-weight: 900; background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .stat-label { font-size: 0.75rem; color: var(--text-muted); margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
+        .section-label { font-family: 'Space Mono', monospace; font-size: 0.7rem; color: var(--primary); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+        .section-label::before, .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+        .card-new { position: relative; }
+        .new-badge { position: absolute; top: 16px; right: 48px; background: linear-gradient(135deg, #f74a6a, #f7c948); color: white; font-size: 0.6rem; font-family: 'Space Mono', monospace; font-weight: 700; padding: 3px 8px; border-radius: 50px; letter-spacing: 1px; text-transform: uppercase; z-index: 2; }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <button class="dark-mode-toggle" id="dark-mode-toggle"><span id="mode-icon">☀️</span></button>
+    <header>
+        <div class="header-badge">● Python 3.x — 7-сынып курсы</div>
+        <h1>Алгоритмдерді<br>программалау</h1>
+        <p>Мультимедиялық электронды оқулық</p>
+    </header>
+    <div class="container">
+        <div class="stats-row">
+            <div class="stat-item"><div class="stat-num">10</div><div class="stat-label">Бөлім</div></div>
+            <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">Тапсырма</div></div>
+            <div class="stat-item"><div class="stat-num">AI</div><div class="stat-label">Чатбот</div></div>
+            <div class="stat-item"><div class="stat-num">∞</div><div class="stat-label">Мүмкіндік</div></div>
+        </div>
+        <div class="section-label">Негізгі бөлімдер</div>
+        <nav class="menu-grid">
+            <a href="chatbot.html" class="card card-new">
+                <span class="new-badge">🆕 ЖАҢА</span>
+                <div class="card-arrow">→</div>
+                <div class="icon">🤖</div>
+                <h3>AI Чатбот</h3>
+                <p>Python сұрақтарыңа жасанды интеллект жауап береді</p>
+            </a>
+            <a href="kmj.html" class="card">
+                <div class="card-arrow">→</div>
+                <div class="icon">📄</div>
+                <h3>ҚМЖ</h3>
+                <p>Қысқа мерзімді жоспар және сабақ мазмұны</p>
+            </a>
+            <a href="sabaq.html" class="card">
+                <div class="card-arrow">→</div>
+                <div class="icon">📘</div>
+                <h3>Сабақ барысы</h3>
+                <p>Толық теориялық мәліметтер мен алгоритмдер</p>
+            </a>
+            <a href="practice.html" class="card">
+                <div class="card-arrow">→</div>
+                <div class="icon">💻</div>
+                <h3>Практикалық жұмыс</h3>
+                <p>3 деңгейлі код жазу тапсырмалары</p>
+            </a>
+            <a href="test.html" class="card">
+                <div class="card-arrow">→</div>
+                <div class="icon">📝</div>
+                <h3>Тест</h3>
+                <p>Python бойынша білімді тексеру</p>
+            </a>
+            <a href="video.html" class="card">
+                <div class="card-arrow">→</div>
+                <div class="icon">🎥</div>
+                <h3>Видео сабақ</h3>
+                <p>Көрнекі мультимедиялық сабақтар</p>
+            </a>
+            <a href="game.html" class="card">
+                <div class="card-arrow">→</div>
+                <div class="icon">🎮</div>
+                <h3>Ойын</h3>
+                <p>Санды тап — логикалық мини-ойын</p>
+            </a>
+            <a href="glossary.html" class="card">
+                <div class="card-arrow">→</div>
+                <div class="icon">📖</div>
+                <h3>Глоссарий</h3>
+                <p>Python терминдер сөздігі + іздеу</p>
+            </a>
+            <a href="curriculum.html" class="card">
+                <div class="card-arrow">→</div>
+                <div class="icon">📅</div>
+                <h3>Оқу жоспары</h3>
+                <p>Барлық тақырыптар тізімі</p>
+            </a>
+            <a href="contact.html" class="card card-new">
+                <span class="new-badge">🎙️ ЖАҢА</span>
+                <div class="card-arrow">→</div>
+                <div class="icon">💬</div>
+                <h3>Кері байланыс</h3>
+                <p>Мәтін немесе аудио арқылы жіберіңіз</p>
+            </a>
+        </nav>
+    </div>
+    <footer><p>© 2024 Информатика пәні · Python Электронды Оқулық · 7-сынып</p></footer>
+    <script>
+        const toggleBtn = document.getElementById('dark-mode-toggle');
+        const modeIcon = document.getElementById('mode-icon');
+        const body = document.body;
+        if (localStorage.getItem('dark-mode') !== 'disabled') { modeIcon.textContent = '☀️'; }
+        else { body.classList.add('light-mode'); modeIcon.textContent = '🌙'; }
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            if (body.classList.contains('light-mode')) { localStorage.setItem('dark-mode', 'disabled'); modeIcon.textContent = '🌙'; }
+            else { localStorage.setItem('dark-mode', 'enabled'); modeIcon.textContent = '☀️'; }
+        });
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                card.style.setProperty('--mx', ((e.clientX - rect.left) / rect.width * 100) + '%');
+                card.style.setProperty('--my', ((e.clientY - rect.top) / rect.height * 100) + '%');
+            });
+        });
+        window.addEventListener('scroll', () => {
+            const scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+    </script>
+</body>
+</html>
